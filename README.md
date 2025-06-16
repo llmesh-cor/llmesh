@@ -5,6 +5,7 @@
   [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
   [![Twitter 关注](https://img.shields.io/twitter/follow/LLMesh_io?style=social)](https://x.com/LLMesh_io)
   [![网站](https://img.shields.io/badge/网站-llmesh.io-brightgreen)](https://llmesh.io)
+  [![Docs](https://img.shields.io/badge/docs-docs.llmesh.io-blue)](https://docs.llmesh.io)
   
   <br>
   
