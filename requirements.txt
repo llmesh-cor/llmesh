@@ -1,0 +1,40 @@
+# LLMESH Network Requirements
+
+# Core dependencies
+asyncio>=3.4.3
+aiohttp>=3.8.1
+cryptography>=3.4.8
+numpy>=1.21.0
+pydantic>=1.8.2
+
+# P2P networking
+websockets>=10.0
+aiofiles>=0.8.0
+
+# AI/ML support
+onnx>=1.10.0
+onnxruntime>=1.9.0
+
+# Blockchain/crypto
+web3>=5.24.0
+eth-account>=0.5.6
+
+# Storage
+aiosqlite>=0.17.0
+redis>=4.0.0
+
+# Monitoring
+prometheus-client>=0.12.0
+structlog>=21.4.0
+
+# Development
+pytest>=6.2.5
+pytest-asyncio>=0.16.0
+pytest-cov>=3.0.0
+black>=21.12b0
+flake8>=4.0.1
+mypy>=0.931
+
+# Documentation
+mkdocs>=1.2.3
+mkdocs-material>=8.1.3
