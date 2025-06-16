@@ -1,0 +1,79 @@
+# LLMESH Network Configuration
+
+# Node settings
+node:
+  id: null  # Auto-generated if null
+  name: "mesh-node-1"
+  stake_amount: 1000
+
+# Network settings  
+network:
+  bootstrap_nodes:
+    - "bootstrap1.mesh.network:8888"
+    - "bootstrap2.mesh.network:8888"
+    - "bootstrap3.mesh.network:8888"
+
+  # P2P settings
+  p2p:
+    port: 8888
+    max_peers: 50
+    enable_nat_traversal: true
+
+  # API settings
+  api:
+    port: 8080
+    enable_ssl: false
+    rate_limit: 100  # requests per minute
+
+# Model settings
+models:
+  directory: "./models"
+  max_size: 1073741824  # 1GB
+  supported_formats:
+    - "onnx"
+    - "tensorflow"
+    - "pytorch"
+
+# Storage settings
+storage:
+  data_dir: "./data"
+  cache_size: 10737418240  # 10GB
+  enable_compression: true
+
+# Security settings
+security:
+  enable_encryption: true
+  min_tls_version: "1.2"
+  auth_token: null  # Set for API authentication
+
+# Performance settings
+performance:
+  max_concurrent_inference: 10
+  inference_timeout: 30  # seconds
+  batch_size: 32
+  enable_gpu: true
+
+# Economics settings
+economics:
+  min_stake: 1000
+  max_fee: 10.0
+  fee_percentage: 0.1  # 10% network fee
+
+# Logging settings
+logging:
+  level: "INFO"
+  file: "./logs/mesh.log"
+  max_size: 104857600  # 100MB
+  backup_count: 5
+
+# Monitoring settings
+monitoring:
+  enable_metrics: true
+  metrics_port: 9090
+  export_interval: 60  # seconds
+
+# Development settings
+development:
+  debug_mode: false
+  mock_inference: false
+  disable_validation: false
